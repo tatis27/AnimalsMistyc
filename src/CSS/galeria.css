@@ -1,0 +1,121 @@
+
+.gallery {
+    background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+      linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.25) 200%
+      );
+    background-blend-mode: multiply;
+  }
+  
+  .contenedor-galeria {
+    display: row-reverse;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*separacion entre columnas*/
+    grid-auto-rows: auto;
+    /*separacion entre columnas*/
+    column-gap: 30px;
+    row-gap: 3em;
+  }
+  
+  .contenedor-galeria > div {
+    margin: 30px;
+    /*padding: 32px;*/
+  }
+  
+  .contenedor-galeria-item {
+    box-shadow: 0 0 9px rgba(204, 182, 182, 0.8);
+    background: rgba(187, 170, 170, 0.4);
+    height: 300px;
+    text-align: center;
+  }
+
+  .img-galeria {
+    width: auto;
+    border-radius: 30%;
+    display: block;
+    /*pone la manito encima de la imagen*/
+    cursor: pointer;
+    max-height: 201px;
+    padding-left: 28px;
+  }
+  
+  .imagen-light {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .show {
+    transform: translate(0);
+  }
+  
+  .agregar-imagen {
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform 0.3s 0.2s;
+  }
+  
+  .showImage {
+    transform: scale(1);
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    width: 3%;
+    cursor: pointer;
+  }
+  
+  .contenedor-expert {
+    background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+      linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.25) 200%
+      );
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .experts {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-blend-mode: multiply;
+  }
+  
+  .cont-expert {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cont-expert img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  n-expert {
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+  }

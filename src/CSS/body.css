@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*seudoclase*/
+  :root {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Anton", sans-serif;
+    font-family: "Festive", cursive;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Otomanopee One", sans-serif;
+    font-family: "Uchen", serif;
+    background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+      linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.25) 200%
+      );
+    background-blend-mode: multiply;
+  }
+  
+  /*contiene el contenido*/
+  .contenedor {
+    width: 90%;
+    max-width: 1200px;
+    /*sirve para ocultar todo lo que se desborde  */
+    overflow: hidden;
+    /*ayuda a centrar*/
+    margin: auto;
+    padding: 60px 0;
+  }
